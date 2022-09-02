@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import PxLayout from "@/components/Layout.vue";
+import PxBanner from "@/components/Banner.vue";
+import PxCatalog from "@/components/Catalog.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <PxLayout>
+      <PxBanner></PxBanner>
+      <PxCatalog></PxCatalog>
+    </PxLayout>
   </main>
 </template>
