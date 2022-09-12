@@ -19,8 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .menu {
-  width: 100%;
-  height: 500px;
+  display: none;
 }
 ul {
   text-decoration: none;
@@ -34,5 +33,13 @@ li {
 .title {
   font-size: 36px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
 }
 </style>

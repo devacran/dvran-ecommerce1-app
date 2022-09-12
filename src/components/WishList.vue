@@ -9,7 +9,14 @@ export default {
   },
   computed: {
     myWishList() {
-      return [];
+      return [
+        {
+          name: "prueba",
+          description: "prueba",
+          price: "12",
+          img: "https://st.mngbcn.com/rcs/pics/static/T3/fotos/outfit/S20/37010107_99-99999999_01.jpg?ts=1650980915554",
+        },
+      ];
       // return this.$store.state.myWishList;
     },
   },

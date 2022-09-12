@@ -16,7 +16,13 @@ import WishList from "@/components/WishList.vue";
 <style scoped lang="scss">
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
 }
 </style>

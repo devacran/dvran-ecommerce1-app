@@ -25,9 +25,11 @@ export default {
 <template>
   <div>
     <div class="container">
-      <div class="left-side">
-        <a v-for="(link, i) in menuLinks" v-bind:key="i">{{ link.title }}</a>
-      </div>
+      <ul class="left-side">
+        <li v-for="(link, i) in menuLinks" v-bind:key="i">
+          {{ link.title }}
+        </li>
+      </ul>
       <div class="right-side">
         <PxSearchBox />
         <div class="buttons">
