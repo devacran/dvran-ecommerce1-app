@@ -14,8 +14,8 @@ export default {
     },
     containerClass() {
       return `
-      width: 300px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
       border: 1px solid transparent;
       ${this.styleType !== "wish" ? "background-color: white" : ""}
       `;
@@ -23,10 +23,7 @@ export default {
     imgContainerClass() {
       return `
         position: relative;
-        width: calc(100% - 20px);
-        height: calc(100% - 20px);
         margin: 10px;
-        background-color: green;
         ${
           this.styleType === "wish"
             ? "margin: 0px; width: 100%; height: 100%;"

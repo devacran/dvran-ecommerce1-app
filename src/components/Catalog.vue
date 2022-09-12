@@ -96,15 +96,27 @@ nav {
 }
 .container {
   width: 100%;
-  padding-top: 30px;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-2);
   background-color: #dcdcdc;
+  border: 1px solid transparent;
 }
 .grid {
-  width: 100%;
-  height: 700px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 20px;
   background-color: #dcdcdc;
+}
+@media only screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 </style>

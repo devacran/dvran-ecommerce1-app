@@ -50,12 +50,7 @@ export default {
 </template>
 <style lang="scss" scoped>
 .left-side {
-  display: flex;
-  width: 70%;
-  padding: 0 3em;
-  justify-content: space-between;
-  align-content: center;
-  font-size: 18px;
+  display: none;
 }
 .right-side {
   display: flex;
@@ -68,8 +63,6 @@ export default {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-}
-.navbar-link {
 }
 .cart-button {
   display: flex;
@@ -106,5 +99,16 @@ export default {
 .buttons {
   display: flex;
   width: 6em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .left-side {
+    display: flex;
+    width: 70%;
+    padding: 0 3em;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 18px;
+  }
 }
 </style>
