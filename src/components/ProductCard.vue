@@ -1,5 +1,6 @@
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "ProductCard",
   props: ["product", "styleType"],
   methods: {
@@ -32,8 +33,9 @@ export default {
         `;
     },
   },
-};
+});
 </script>
+
 <template>
   <div :style="containerClass">
     <div :style="imgContainerClass">
@@ -45,10 +47,7 @@ export default {
           ><img v-if="isFav" src="../assets/WishIconActive.png"
         /></a>
       </div>
-      <img
-        class="product-img"
-        src="https://media.istockphoto.com/photos/blank-black-tshirt-front-with-clipping-path-picture-id483960103?k=20&m=483960103&s=612x612&w=0&h=H4TNt5SOmcNIRMqrKY7J5u2Yy-f0ZZbD_Dsqqw3if1I="
-      />
+      <img class="product-img" :src="this.product.image" />
     </div>
   </div>
 </template>
