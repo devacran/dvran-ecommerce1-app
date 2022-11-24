@@ -110,7 +110,7 @@ export default {
     padding: 0 3em;
     justify-content: space-between;
     align-content: center;
-    font-size: 18px;
+    font-size: $font-size-small;
   }
 }
 </style>
