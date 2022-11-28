@@ -5,10 +5,11 @@
 $font-primary: "Arvo", serif;
 $font-secondary: "Open Sans", sans-serif;
 
-$font-size-small: 20px;
-$font-size-medium: 30px;
-$font-size-large: 35px;
-$font-size-extra-large: 50px;
+$font-size-xs: 12px;
+$font-size-s: 16px;
+$font-size-m: 30px;
+$font-size-l: 35px;
+$font-size-xl: 50px;
 
 h1,
 h2,
@@ -20,7 +21,7 @@ h4 {
 h1 {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-extra-large;
+  font-size: $font-size-xl;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -28,7 +29,7 @@ h1 {
 h2 {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-medium;
+  font-size: $font-size-m;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -36,7 +37,7 @@ h2 {
 h3 {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-large;
+  font-size: $font-size-l;
   font-weight: 300;
   line-height: 1.5;
 
@@ -48,7 +49,7 @@ h3 {
 h4 {
   color: $color-primary;
   font-family: $font-primary;
-  font-size: $font-size-medium;
+  font-size: $font-size-m;
   font-weight: 300;
   line-height: 1.5;
 
@@ -60,14 +61,14 @@ h4 {
 h5 {
   color: $color-black;
   font-family: $font-secondary;
-  font-size: $font-size-medium;
+  font-size: $font-size-m;
   font-weight: 300;
   line-height: 1.5;
 }
 
 p {
   font-family: $font-secondary;
-  font-size: $font-size-small;
+  font-size: $font-size-s;
   line-height: 1.5;
   margin: 0;
 

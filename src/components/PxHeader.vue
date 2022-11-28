@@ -22,7 +22,7 @@ export default {
   justify-content: center;
   height: 50px;
   background-color: #9caf85;
-  font-size: $font-size-small;
+  font-size: $font-size-s;
   color: white;
 }
 </style>

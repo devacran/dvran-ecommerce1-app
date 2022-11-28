@@ -43,7 +43,7 @@ nav {
   height: 2em;
   align-items: center;
   margin-bottom: 20px;
-  font-size: $font-size-small;
+  font-size: $font-size-s;
   div {
     margin: 0 2em;
   }
