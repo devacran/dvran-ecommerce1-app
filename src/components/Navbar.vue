@@ -1,5 +1,7 @@
 <script lang="ts">
 import PxSearchBox from "./SearchBox.vue";
+import { useWishListStore } from "../stores/wish-list";
+
 const menuLinks = [
   { title: "New Arrivals", link: "" },
   { title: "Clothing", link: "" },
@@ -11,15 +13,15 @@ const menuLinks = [
 export default {
   name: "PxNavbar",
   components: { PxSearchBox },
+  setup() {
+    const wishList = useWishListStore();
+    return {
+      wishList: wishList.wishList,
+    };
+  },
   data: () => ({
     menuLinks,
   }),
-  computed: {
-    myWishList() {
-      return [];
-      // return this.$store.state.myWishList;
-    },
-  },
 };
 </script>
 <template>
@@ -43,7 +45,7 @@ export default {
             <router-link to="/wishlist">
               <img src="../assets/WishIconInactive.png" />
             </router-link>
-            <span>{{ myWishList.length }}</span>
+            <span>{{ wishList.items.length }}</span>
           </div>
         </div>
       </div>
