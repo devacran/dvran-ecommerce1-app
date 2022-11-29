@@ -1,13 +1,18 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useWishListStore } from "../stores/wish-list";
 export default defineComponent({
   name: "ProductCard",
   props: ["product", "styleType"],
-  methods: {
-    handleClick() {
-      // this.$store.commit("setWishItem", this.product);
-    },
+  setup() {
+    const wishList = useWishListStore();
+    return {
+      handleClick() {
+        wishList.addItem({});
+      },
+    };
   },
+
   computed: {
     isFav() {
       return false;
