@@ -7,8 +7,10 @@ import PxCatalog from "@/components/Catalog.vue";
 <template>
   <main>
     <PxLayout>
-      <PxBanner></PxBanner>
-      <PxCatalog></PxCatalog>
+      <template #content>
+        <PxBanner></PxBanner>
+        <PxCatalog></PxCatalog>
+      </template>
     </PxLayout>
   </main>
 </template>

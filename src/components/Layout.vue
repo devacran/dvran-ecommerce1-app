@@ -10,6 +10,6 @@ export default {
 <template>
   <div>
     <PxHeader />
-    <slot></slot>
+    <slot name="content" />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <script lang="ts">
 import { ProductsService } from "@/api";
 import type { Product } from "@/api/index.types";
-import ProductCard from "./ProductCard.vue";
+import ProductCard from "@/components/ProductCard.vue";
 
 export default {
   name: "PxCatalog",
