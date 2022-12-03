@@ -1,24 +1,22 @@
-<script lang="ts">
+<script setup lang="ts">
 import { ProductsService } from "@/api";
 import type { Product } from "@/api/index.types";
 import ProductCard from "@/components/ProductCard.vue";
+import { ref } from "vue";
 
+const products = ref<Product[]>([]);
+const productsService = new ProductsService();
+productsService.getProducts().then((data) => {
+  products.value = data;
+});
+</script>
+
+<script>
 export default {
   name: "PxCatalog",
-  components: { ProductCard },
-  data() {
-    return {
-      products: [] as Product[],
-    };
-  },
-  mounted() {
-    const productsService = new ProductsService();
-    productsService.getProducts().then((data) => {
-      this.products = data as Product[];
-    });
-  },
 };
 </script>
+
 <template>
   <div>
     <div class="container">

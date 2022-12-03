@@ -3,7 +3,15 @@ import { defineComponent } from "vue";
 import { useWishListStore } from "../stores/wish-list";
 export default defineComponent({
   name: "ProductCard",
-  props: ["product", "styleType"],
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+    styleType: {
+      type: String,
+    },
+  },
   setup() {
     const wishList = useWishListStore();
     return {
@@ -14,10 +22,6 @@ export default defineComponent({
   },
 
   computed: {
-    isFav() {
-      return false;
-      // return this.product.isFavorite;
-    },
     containerClass() {
       return `
       width: 100%;
@@ -46,13 +50,17 @@ export default defineComponent({
     <div :style="imgContainerClass">
       <div v-if="styleType !== 'wish'" class="wish-button">
         <a v-on:click="handleClick">
-          <img v-if="!isFav" src="../assets/WishIconInactive.png" />
+          <img
+            v-if="!product.isFavorite"
+            src="../assets/WishIconInactive.png"
+          />
         </a>
         <a v-on:click="handleClick"
-          ><img v-if="isFav" src="../assets/WishIconActive.png"
+          ><img v-if="product.isFavorite" src="../assets/WishIconActive.png"
         /></a>
       </div>
-      <img class="product-img" :src="this.product.image" />
+      <img class="product-img" :src="product.image" />
+      <slot></slot>
     </div>
   </div>
 </template>
