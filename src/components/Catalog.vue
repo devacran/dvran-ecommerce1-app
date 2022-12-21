@@ -11,7 +11,7 @@ productsService.getProducts().then((data) => {
 });
 </script>
 
-<script>
+<script lang="ts">
 export default {
   name: "PxCatalog",
 };
