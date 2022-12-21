@@ -12,7 +12,12 @@ export const useWishListStore = defineStore({
   },
   actions: {
     addItem(product) {
-      this.list.items.push(product);
+      const index = this.list.items.findIndex((item) => item.id === product.id);
+      if (index === -1) {
+        this.list.items.push(product);
+      } else {
+        this.list.items.splice(index, 1);
+      }
     },
   },
 });

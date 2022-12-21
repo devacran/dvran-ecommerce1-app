@@ -12,12 +12,16 @@ export default defineComponent({
       type: String,
     },
   },
-  setup() {
+  setup(props) {
     const wishList = useWishListStore();
+    const isFavorite = wishList.list.find(
+      (item) => item.id === props.product.id
+    );
     return {
       handleClick() {
-        wishList.addItem({});
+        wishList.addItem(props.product);
       },
+      isFav: isFavorite,
     };
   },
 
