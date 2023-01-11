@@ -7,9 +7,17 @@ export default {
   },
 };
 </script>
+
 <template>
-  <div>
+  <div class="container">
     <PxHeader />
     <slot name="content" />
   </div>
 </template>
+
+<style scoped>
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+</style>

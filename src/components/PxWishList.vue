@@ -1,6 +1,6 @@
 <script lang="ts">
-import WishItem from "./WishItem.vue";
-import WishItemEmpty from "./WishItemEmpty.vue";
+import WishItem from "./PxWishItem.vue";
+import WishItemEmpty from "./PxWishItemEmpty.vue";
 export default {
   name: "WishList",
   components: {

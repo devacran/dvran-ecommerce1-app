@@ -1,27 +1,5 @@
 @import "./variables/colors-theme-primary";
-@import "./variables/layout";
+@import "./variables/responsive";
 @import "./variables/paddings";
 @import "./variables/typography";
-
-:root {
-  --space-1: 1rem;
-  --space-2: 2rem;
-  --space-3: 3rem;
-  --space-4: 4rem;
-  --space-5: 4rem;
-  --space-6: 4rem;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: $color-white;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-}
+@import "./variables/layout";

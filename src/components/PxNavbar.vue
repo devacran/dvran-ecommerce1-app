@@ -1,5 +1,5 @@
 <script lang="ts">
-import PxSearchBox from "./SearchBox.vue";
+import PxSearchBox from "./PxSearchBox.vue";
 import { useWishListStore } from "../stores/wish-list";
 
 const menuLinks = [

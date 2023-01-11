@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import PxLayout from "@/components/Layout.vue";
-import PxBanner from "@/components/Banner.vue";
-import PxCatalog from "@/components/Catalog.vue";
+import PxLayout from "@/components/PxLayout.vue";
+import PxBanner from "@/components/PxBanner.vue";
+import PxFavoritesSection from "@/components/PxFavoritesSection.vue";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import PxCatalog from "@/components/Catalog.vue";
     <PxLayout>
       <template #content>
         <PxBanner></PxBanner>
-        <PxCatalog></PxCatalog>
+        <PxFavoritesSection />
       </template>
     </PxLayout>
   </main>

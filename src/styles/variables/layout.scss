@@ -1,0 +1,14 @@
+$max-width: 1200px;
+
+@mixin max-width {
+  max-width: 90vw;
+  padding: 0 5vw;
+  margin: 0 auto;
+  @include media-query(tablet) {
+    max-width: 90vw;
+  }
+  @include media-query(laptop) {
+    padding: unset;
+    max-width: $max-width;
+  }
+}

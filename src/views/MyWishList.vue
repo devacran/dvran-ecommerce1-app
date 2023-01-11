@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import Layout from "@/components/Layout.vue";
-import pxMenu from "@/components/pxMenu.vue";
-import WishList from "@/components/WishList.vue";
+import Layout from "@/components/PxLayout.vue";
+import WishList from "@/components/PxWishList.vue";
 </script>
 
 <template>
   <Layout>
     <div class="container">
-      <pxMenu />
       <WishList />
     </div>
   </Layout>
