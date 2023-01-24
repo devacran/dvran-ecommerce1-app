@@ -1,6 +1,10 @@
 <script lang="ts">
+import PxCarousel from "./PxCarousel.vue";
 export default {
   name: "PxFavoritesSection",
+  components: {
+    PxCarousel,
+  },
 };
 </script>
 
@@ -14,6 +18,7 @@ export default {
         <li>FOR RUNNING</li>
       </ul>
     </div>
+    <PxCarousel />
   </div>
 </template>
 

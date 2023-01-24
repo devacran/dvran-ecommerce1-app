@@ -7,6 +7,9 @@ import { RouterView } from "vue-router";
 </template>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
 :root {
   --space-1: 1rem;
   --space-2: 2rem;
@@ -19,7 +22,6 @@ import { RouterView } from "vue-router";
 html {
   font-size: 62.5%;
   font-family: $font-primary;
-  box-sizing: border-box;
 }
 
 body {
