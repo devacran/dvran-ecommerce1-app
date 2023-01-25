@@ -18,7 +18,7 @@ export default {
         <li>FOR RUNNING</li>
       </ul>
     </div>
-    <PxCarousel />
+    <PxCarousel data="[{id: 1}]" />
   </div>
 </template>
 
