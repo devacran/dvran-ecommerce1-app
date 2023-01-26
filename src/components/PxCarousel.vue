@@ -1,10 +1,14 @@
 <script lang="ts">
+import PxButtonForward from "./PxButtonForward.vue";
+import PxButtonBackward from "./PxButtonBackward.vue";
 import PxCard from "./PxCard.vue";
 
 export default {
   name: "PxCarousel",
   components: {
     PxCard,
+    PxButtonForward,
+    PxButtonBackward,
   },
   data() {
     return {
@@ -43,8 +47,8 @@ translateX(calc(-${this.currentCardIdx * 100}% - ${
 <template>
   <div class="carousel-container">
     <div class="controls">
-      <button class="control" @click="prev">back</button>
-      <button class="control" @click="next">forward</button>
+      <PxButtonBackward class="control" @click="prev">back</PxButtonBackward>
+      <PxButtonForward class="control" @click="next">forward</PxButtonForward>
     </div>
     <div class="cards-container" :style="cardContainerStyle">
       <div class="card" :key="i" v-for="(card, i) in cards">
@@ -79,7 +83,6 @@ translateX(calc(-${this.currentCardIdx * 100}% - ${
   width: 100%;
   overflow: hidden;
   padding: 0 $space-2;
-  background-color: rgba(255, 0, 0, 0.217);
   @include media-query("laptop") {
     @include max-width;
   }
@@ -90,10 +93,10 @@ translateX(calc(-${this.currentCardIdx * 100}% - ${
   width: 100%;
   height: 100%;
   gap: $space-1;
+  margin-bottom: $space-2;
   transition: transform 0.3s ease-in-out;
 }
 .card {
-  background-color: aqua;
   width: 100%;
   height: 100%;
   flex-shrink: 0;

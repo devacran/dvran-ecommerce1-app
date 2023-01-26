@@ -23,6 +23,10 @@ export default defineComponent({
 </template>
 
 <style lang="scss">
+.card-container {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
 .card-title {
   font-size: $font-size-s;
   font-weight: 700;

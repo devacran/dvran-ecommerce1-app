@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   width: 100%;
-  background-color: rgba(255, 0, 0, 0.217);
+  margin-bottom: $space-2;
   @include media-query("laptop") {
     @include max-width;
   }
@@ -38,6 +38,7 @@ h2 {
   border-block-end: 3px solid grey;
   overflow: scroll;
   width: 100%;
+  margin-bottom: $space-2;
   ul {
     display: flex;
     justify-content: space-around;
