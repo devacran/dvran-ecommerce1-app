@@ -17,6 +17,9 @@ export default {
       columnGap: 10 /*$space-1*/,
     };
   },
+  mounted() {
+    // Do something with the cardNodes here
+  },
   computed: {
     currentCardIdx() {
       return this.currentIndex;

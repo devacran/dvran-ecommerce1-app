@@ -18,14 +18,16 @@ export default {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: $color-primary;
+  border: 1px solid $color-white-dark;
+  background-color: $color-white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: $color-black;
+    background-color: $color-white-light;
+    border: 1px solid $color-black-light;
   }
   &:active {
-    background-color: $color-black;
+    background-color: $color-white-dark;
   }
 }
 </styles>
