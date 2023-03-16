@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ProductsService } from "@/api";
 import type { Product } from "@/api/index.types";
-import ProductCard from "@/components/ProductCard.vue";
+import ProductCard from "@/components/PxProductCard.vue";
 import { ref } from "vue";
 
 const products = ref<Product[]>([]);
@@ -47,7 +47,6 @@ nav {
   }
 }
 .container {
-  width: 100%;
   padding-top: var(--space-4);
   padding-bottom: var(--space-2);
   background-color: #dcdcdc;

@@ -1,5 +1,5 @@
 <script lang="ts">
-import ProductCard from "./ProductCard.vue";
+import ProductCard from "./PxProductCard.vue";
 export default {
   name: "WishItem",
   components: { ProductCard },

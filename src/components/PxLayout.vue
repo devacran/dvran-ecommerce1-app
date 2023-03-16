@@ -7,9 +7,12 @@ export default {
   },
 };
 </script>
+
 <template>
-  <div>
+  <div class="container">
     <PxHeader />
     <slot name="content" />
   </div>
 </template>
+
+<style scoped></style>
